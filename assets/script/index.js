@@ -78,9 +78,9 @@ function listContacts(input) {
     const nameP = document.createElement('p');
     const cityP = document.createElement('p');
     const emailP = document.createElement('p');
-    nameP.innerHTML = "Name: " + name;
-    cityP.innerHTML = "City: " + city; 
-    emailP.innerHTML = "Email: " + emailContact;
+    nameP.innerHTML = "<b>Name: </b>" + name;
+    cityP.innerHTML = "<b>City: </b>" + city; 
+    emailP.innerHTML = "<b>Email: </b>" + emailContact;
 
     childDiv.appendChild(nameP);
     childDiv.appendChild (cityP);
