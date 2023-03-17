@@ -61,7 +61,7 @@ totalcontactsBtn.innerHTML = contactSaved;
  
 }
 
-console.log(totalContacts);
+//console.log(totalContacts);
 
 function listContacts(input) {
     const info = input.value.trim();
@@ -94,16 +94,6 @@ function listContacts(input) {
 
         // Remove the div and its content from the DOM
         childDiv.remove();
-
-            for (var i = 0; i < totalContacts.length; i++) {
-                if (JSON.stringify(inputValueArray[i]) === JSON.stringify(totalContacts)) {
-                // If target array is found, remove it from the main array using splice method
-                totalContacts.splice(i, 1);
-                // Decrement i to adjust for the removed element
-                i--;
-                }
-            } 
-            //console.log(totalContacts);
         });
     };
 
