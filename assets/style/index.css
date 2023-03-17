@@ -1,0 +1,180 @@
+@import url(./reset.css);
+
+:root {
+  --app-yellow-hover: #ffff1c;
+  --app-dark-bg: #1a1d28;
+  --app-medium-gray: #575757;
+  --app-orange-text: #ff8e1c;
+  --app-light-gray: #f9f9f9;
+  --app-blue-btn: #6366f1;
+  --app-red-msg: #ff0000;
+}
+
+body {
+  background-color: var(--app-dark-bg);
+}
+
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+/*----------------------------------------*/
+/* Section - Input contacts               */
+/*----------------------------------------*/
+
+h2 {
+  color: var(--app-light-gray);
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.input-section {
+  display: grid;
+  place-content: center;
+}
+
+.contact-form {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  margin-top: 20px;
+  width: 600px;
+}
+
+
+input[type=text] {
+  width: 100%;
+  height: 37px;
+  padding: 0 15px;
+  border: 1px solid rgb(255 255 255 / 0.1); 
+  background-color: rgb(255 255 255 / 0.1);
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  margin-left: 30px;
+  transition: border-color 0.25s ease-in-out
+}
+
+input[type=text]:hover {
+  border-color: var(--app-orange-text);
+
+}
+
+
+input[type=button] {
+  width: 150px;
+  height: 37px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--app-light-gray);
+  background-color: var(--app-orange-text);
+  box-shadow: 1px 1px 1px rgb(0 0 0 / 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+}
+
+input[type=button]:hover {
+  background-color: var(--app-yellow-hover);
+  color: var(--app-dark-bg);
+}
+
+input + input {
+  margin-left: 20px;
+}
+
+
+.invalid-msg {
+  color: var(--app-red-msg);
+  margin-top: 10px;
+  margin-left: 30px;
+  visibility: hidden;
+}
+
+/*----------------------------------------*/
+/* Section - List contacts                */
+/*----------------------------------------*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1030px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.grid-item {
+  width: 330px;
+  height: 120px;
+  color: var(--app-light-gray);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  text-align: left;
+  padding-left: 20px;
+  background-color: var(--app-medium-gray);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+
+}
+
+.grid-item:hover {
+  border: 1px solid var(--app-orange-text); 
+}
+
+div.info-p {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-weight: 800;
+}
+
+
+.saved-contacts {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  background-color: var(--app-blue-btn);
+  border-radius: 15px;
+  width: 165px;
+  height: 37px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 30px;
+  right: 80px;
+  font-weight: 600px;
+  line-height: 37px;
+  color: var(--app-light-gray);
+  font-weight: 800;
+}
+
+p {
+  color:var(--app-light-gray)
+}
+
+/*----------------------------------------*/
+/*Footer                                  */
+/*----------------------------------------*/
+
+footer {
+  color: var(--app-light-gray);
+  font-size: 12px;
+  font-weight: 800;
+  position:fixed;
+  bottom: 30px;
+  left: 80px;
+}

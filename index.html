@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-with, initial-scale=1">
+        <meta name="description" content="Shape factory">
+        <meta name="keywords" content="html, css, javascript">
+        <title>Contact page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap" rel="stylesheet">
+        <link rel="shorcut icon" href="./assets/image/favicon-32x32 copy.png" type="image/S-icon">
+        <link rel="stylesheet" href="./assets/style/index.css" media="all">
+        <script src="./assets/script/index.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <h2> My Contacts</h2>
+                <section class="input-section">
+                    <div class="contact-form">
+                        <input type="text" class="contact-info" name="contact-info" 
+                        placeholder="Contact info (name, city, email)" required>
+                        <input type="button" class="add-contact" value="Add">
+                    </div>
+                    <div class="invalid-msg" class="hidden">
+                        Please, enter a valid data (name, city, email)</div>
+                </section>
+                <section class="contact-list">
+                    <div class="grid-container" id="grid">  
+                    </div>
+                </section>
+            </div>
+            <div class="saved-contacts">
+                <p class="title">Saved contacts: </p><p class="total-contacts"></p>
+            </div>
+        </main>
+        <footer>
+            <p id="footer"> &copy2023 Deynni Almazan</p> 
+        </footer>
+    </body>
+</html>
